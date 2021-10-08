@@ -61,7 +61,7 @@ class GovernmentMelonOrder(AbstractMelonOrder):
     """A melon order within the USA for US Government."""    
     def __init__(self, species, qty):
         #"""Initialize melon order attributes."""
-        super().__init__(species, qty, "domestic", 0)
+        super().__init__(species, qty, "government", 0)
         self.passed_inspection = False
 
     def mark_inspection(self, passed):
